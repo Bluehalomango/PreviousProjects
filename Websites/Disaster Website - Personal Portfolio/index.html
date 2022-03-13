@@ -1,0 +1,448 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Lucas Bouwman</title>
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- jQuery Library -->
+        <script src="js/jquery-3.5.1.min.js"></script>
+
+        <!-- Magnific Popup core CSS file -->
+        <link rel="stylesheet" href="css/magnific.css">
+
+        <!-- Magnific Popup core JS file -->
+        <script src="js/magnific.js"></script>
+	</head>
+        <body>
+            <div id = "titleCard">
+                <a id = "title" onclick="gradientSetter(this)"></span>
+                    Howdy.
+                </a>
+                <canvas id="canvas"></canvas>
+            </div>
+            <nav>
+                <div id= "nav">
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#reflect">Reflection</a>
+                    <a href="#partC">Part C</a>
+                    <a href="#partB">Part B</a>
+                    <a href="#partA">Part A</a>
+                    <a href="#explore">Design</a>
+                    <a href="#bio">Bio</a>
+                </div>
+            </nav>
+            <div class = "main">
+
+
+                <section id="bio">
+                    <h1 class = "contentChanger">
+                            My name is Lucas Bouwman and I am a <a onclick="bio(this)">Student</a>
+                    </h1>
+                    <img src="images/bio.jpg" href = "images/bio.jpg" alt="This is just a picture of me" class="imgEnlarge">
+                    <article class="content" style="display: block;"> 
+                        <p>
+                            I am currently studying a Bachelor of Information Technology at UQ, which I started in 2020 and intend to finish in 2022. 
+                            My main interests in the field are around programming and coding, with much more interest in the technical side than in design.
+                            I intend on completing a dual major with Software Design and either Computer Systems and Networks or Software Information Systems,
+                            showcasing the fields that I find far more interesting and engaging.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            For DECO1800's Major Project, I was the team leader. This was decided on the grounds that I was most familar with the idea
+                            and that I had a well-balanced skillset. Alongside me, I had fellow team mates Caitlenn, Caleb, Daniel and Sid.
+                            I enjoyed working together with my them in a cooperative and constructive environment to create our final design.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            At the end of the day, I am still an average human just like you. I eat, sleep, drink and play a LOT of video games. I mean, I've been 
+                            playing game since as long as I can remember and I attribute a fair number of my skills to them, mainly including strategic thinking, problem solving, 
+                            cooperation, management skills, ingenuity and creative thinking. I think games are a great way both to connect and interact with people as well as to 
+                            teach people useful skills in an engaging manner. While I haven't put too much thought into it yet, I have considered going into the games development 
+                            industry at some point in the future, most likely after my studies are over.
+                        </p>
+                        <p>
+                            You can contact me:
+                        </p>
+                        <p>
+                            Email: bluehalomango@gmail.com 
+                        </p>
+                        <p>
+                            Facebook by my name and a whole pile of other random places by my username Bluehalomango
+                        </p>
+                    </article>
+                </section>
+
+                <section id="explore">
+                    
+                    <img src="images/website.jpg" href = "images/website.jpg" alt="Final Website for Part C" class="imgEnlarge" style="display : block;">
+                    <img src="images/database.jpg" href = "images/database.jpg" alt="The Disaster Database we used from data.gov" class="imgEnlarge" style="display :none;">
+                    <img src="images/poster.jpg" href = "images/poster.jpg" alt="My Pitch Poster for the Idea" class="imgEnlarge" style="display :none;">
+                    <h1 class="contentChangerImg">
+                        During the 'Design Exploration' phase, I <a onclick="explore(this)">The Idea</a>
+                    </h1>
+                    <article class="content" style="display: block;"> 
+                        <p>
+                            The idea we went for with our major project was something I came up with during the ‘Design Exploration’ phase. The general premise is to educate and entertain users, 
+                            later defined to be school students, with the various disasters that have occurred in Australia over the last 170 odd years. We would parse the information from 
+                            data.gov into pins that we could place on a map of Australia in relation to their real-life location, giving the user the ability to explore the diverse landscape of disasters. 
+                            They would then be able to interact with the pins to learn both historical information about that specific disaster as well as general safety information for that type of disaster. 
+                            This gave us both breadth and depth for our design, as we ultimately limited it down to exclusively natural disasters and still there were hundreds of entries that we made use of. 
+                            With some additional tweaks and additions, we knew we had an idea that would work.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;"> 
+                        <p>
+                            Back during the ‘Design Exploration’ phase when we were combing through the various databases in data.gov and researching what our project would be, 
+                            I came up with my idea pretty quickly. In fact, it was the very first database I actually looked at that we ended up using and basing everything on. 
+                            Once I saw the data structure and information that it had, especially the addition of the latitude and longitude coordinates for the disasters, 
+                            I already could start to envision what it could become. Then, with my team’s help, we brought that vision to life, albeit with a fair number of 
+                            successful reiterations and design changes thanks to their own design exploration and invaluable input.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;"> 
+                        <p>
+                            It was this same idea that I pitched to my tutor’s and fellow uni students during the ‘Design Exploration’. I prepared my speech and 
+                            poster as above for the pitch and did my best to sell my idea, which, might I just say, seemed to have worked by the fact that we went with it. 
+                            One of the main components of the pitch was the specific features I had already planned for the idea. The main was the interactive map that 
+                            ended up becoming the central focus of the project and remained virtually identical in structure to the final implementation, with the only 
+                            additions being various filter features and a greatly improved aesthetic style thanks to my skilled team mates. 
+                            
+                            The next major feature was a strategic management game that would teach users how to manage, prepare for and recover from disasters in a large scale, 
+                            dealing with political, environmental and economical factors. While this idea was incredibly ambitious, I still felt hopeful in attempting it 
+                            as I have a very thorough understanding of how these sorts of games work from years of experience playing them. Unsurprisingly, this idea was 
+                            scrapped quickly but we still kept the idea of a minigame, just changed into a more narrative experience. The last feature I pitched was 
+                            the ‘Danger Rating’, which made it through to the final implementation. Basically, it’s a formula that takes the statistics from the disasters 
+                            into account to rank and sort all the disasters into a rating scale from 1 to 10, with 10 being reserved for only the most dangerous disasters.
+                        </p>
+                    </article>
+                </section>
+                
+                <section id="partA">
+                    <h1 class="contentChanger">
+                        For Part A, I <a onclick="partA(this)">Described The Design Concept</a>
+                    </h1>
+                    <article class="content" style="display: block;">
+                        <p>
+                            One of my main tasks during the Part A: Design Concept Proposal was to explain the concept of our project. 
+                            It was decided that it would be best for me to complete this specific task as I was both the team lead and the progenitor of the idea. 
+                            This proved vital, as I was able to use the design concept to set the expectations and project orientation for the rest of the document and 
+                            project as a whole. With the importance of this in mind, I worked closely with my fellow team mates to develop and agree on the specific purpose of the design. 
+                        </p>
+                        <p>
+                            We collectively decided that our project should be engaging and interactive, yet still remain primarily an educational tool for school students, 
+                            with a modern and professional aesthetic to appeal to a large and diversified audience. The idea was for the main component of the project, 
+                            the interactive map, to be as approachable to all audiences, with the secondary component of the narrative minigame being specifically designed for school students. 
+                            We saw these union of ideas as a way to both satisfy the given design brief and create an effective design that could realistically see use.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            I was also tasked with defining the scope of the project due to my familiarity with the design. During the scope, 
+                            I formalised the intended features of the website and specified the direct content we would use from the database, 
+                            setting the technical orientation for the project. Concerning the database, I knew we had to limit the information we used as the database 
+                            was exceptionally large for the detail of records we had, with hundreds of individual disasters categorised with their descriptions, dates, types, statistics and more. 
+                        </p>
+                        <p>
+                            With this in mind, I narrowed our scope down to solely the natural disasters, specifically the categories of ‘Bush fires’, ‘Urban Fires’, 
+                            ‘Cyclones’, ‘Earthquakes’, ‘Hail’, ‘Flood’ and ‘Environment’ (Which was later split into Droughts and Heatwaves), 
+                            with the intention at make use of most of the information for each record, with the exception of some the outlying statistics, 
+                            like Aircrafts Destroyed/Damaged, and any other miscellaneous or irrelevant information like Author. I also had to define the features of the website, 
+                            which I worked with my team mates to decide on the fundamental components of the interactive map with pop-ups for the disasters, 
+                            an informational page for each disaster that would contain the historical and information for that disaster and the narrative minigame. 
+                            We also planned on added side features such as a timeline, category filter, Danger Rating and search bar. With all of this set, we knew we had our project ready and organised to go.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            The last component I had to work on for Part A was the completion plan. One part of this was that, being designated team lead, 
+                            I had to define the team roles for our group, which I worked closely and diplomatically with my fellow team mates to come to clear and decisive choices. 
+                            For this, I took each member’s preference, personal interest, skillset and work ethic into consideration to try and create the most balanced and best suited team dynamic. 
+                            While I was collectively made team lead, Caitlenn was made head of CSS due to her experience and interest in design, Sid was given charge of JavaScript 
+                            as he was the only member of our team that had extensive experience in it, Daniel was put in charge of Documentation as he enjoyed writing up reports and 
+                            lastly Caleb was chosen to lead User Experience, which generally meant creating persona’s or similar vital documentation and research.  
+                        </p>
+                        <p>
+                            With the team roles set, I then set to creating a completion plan for the project from the Part A report all the way to the final implementation for Part C, 
+                            using strategic considerations and my intimate knowledge of the design to successfully organise the team. I consider the Gantt chart 
+                            we made to visually present this to be successful, as it was followed almost to the letter, with the only changes occurring when a 
+                            given team member was unable to complete a task or during Part C, where additional tasks were added to polish the project. 
+                        </p>
+                    </article>
+                </section>
+
+                <section id="partB">
+                    <h1 class="contentChanger">
+                        For Part B, I <a onclick="partB(this)">Engineered The Database</a>
+                    </h1>
+                    <article class="content" style="display: block;">
+                        <p>
+                            For Part B, I ended up having to figure out most of the stuff for the secondary database we implemented through PhpMyAdmin. 
+                            While originally designated to Caleb, we ran into unforeseen complications when connecting to the database. Instead, 
+                            Caleb moved on to alternate tasks and I shifted focus to get the database up and running for the MVP, as we were quickly 
+                            running out of time until we had to give our progress presentation. With this deadline in mind, I set to work, showing determination and focus in my task. 
+                            Firstly, I had to create the database and table within PhpMyAdmin and prepare it for the supplementary safety information Caleb and I 
+                            had already written up earlier, which I had to do extensive research for. Once this was completed, I moved on to connecting to the 
+                            database in our php file, which is where we ran into trouble. Firstly, there was an issue within our team zone that we were initially 
+                            unaware of that was preventing the connection, ultimately requiring extension communication with our tutors. During this stage, 
+                            we were unable to attempt to connect to the database while time continued to tick, bringing us ever closer to the deadline. 
+                        </p>
+                        <p>
+                            Once the tutors determined the issue and fixed our zone, I immediately went back to figuring out how to connect to our secondary database. 
+                            After numerous unsuccessful attempts and extensive research, I finally resolved how to connect to our database and then had to figure 
+                            out how to properly parse our information. Originally, we intended to use a variable parsed through JavaScript to create the MySQL 
+                            query to return the necessary information but we found we were unable to do this due to the order in which the code is compiled, 
+                            as our php file would be unable to access the JavaScript file.
+                            With time short, I devised a quick stop-gag solution to this issue, instead parsing our secondary database table into an array of arrays, 
+                            with each nested array being the row of values from the table. With the full array returned and parsed into our JavaScript file, 
+                            we were then able to navigate through it and make use of our variable to determine which nested array to use, with innerHTML 
+                            elements then used to insert the necessary text. While I didn’t particularly like this method, as I found it redundant and inefficient 
+                            to call and return the entire table each time the page was entered, we kept it for the MVP. 
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            While originally designated to Sid, he ran into issues when attempting to import and adapt a pre-coded timeline library. To resolve this, 
+                            I worked together with him to redesign the implementation and instead create our own entirely coded timeline. To accomplish this, 
+                            I recommended the use of a slider bar, as this resulted in a more appropriate approach than what Sid originally intended, 
+                            resulting in a more simplistic, modern and, most importantly, functional timeline. After Sid got the slider working, 
+                            I adjusted the values and ranges within the HTML of the timeline and created an associated function within the JavaScript. 
+                            This function took the current value of the timeline and parsed it through our internal disaster filter function. I then had to modify the filter 
+                            function to take the current time into consideration, allowing it to display any relevant disasters that occurred +-10 years from the current selected date. 
+                            And thus, Sid and I managed to get the timeline working for the MVP, albeit with little to no time for styling. 
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            The Danger Rating started as an idea to rank the disasters in my design exploration phase and ultimately stayed true to it’s intention, 
+                            assigning each disaster to a danger scale from 1 to 10, with 10 being the most dangerous and 1 being the least. To accomplish this, 
+                            I created a mathematical formula in JavaScript that took in the most important and relevant statistics of the disasters to create a 
+                            simple scale system. To that end, I made use of a fair number of statistics to create as comprehensive result as seemed reasonable, 
+                            splitting the statistics into different categorical brackets that could be waited differently. The first bracket was for deaths, 
+                            the second, human ‘complications’, consisted of people evacuated, injured and made homeless, while the third was property (Trains, Houses, Vehicles and Buildings) destroyed, 
+                            the fourth was property damaged, fifth being livestock killed and the last being related to insurance expenses, which each weighted differently and appropriately.
+                        </p>
+                        <p>
+                            Unfortunately, because the disasters had very differing statistics associated with them and some had no statistics at all, 
+                            I had to take in to account a vast degree of discrepancy. To this end, I had to artificially inflate the base value to a minimal value, 
+                            as I didn’t want the any disasters to have no value for their danger rating. This also meant that no disasters would be in the lowest 
+                            danger rating of 1 but I personally believed this to be an appropriate design as disasters are, inherently, dangerous and anything 
+                            that would theoretically score a 1 shouldn’t be considered a disaster. While I would have preferred to forgo the artificial adjustment, 
+                            I have come to realise, from the project as a whole, that it is incredibly vital to learn when to come to a compromise.
+                        </p>
+                    </article>
+                </section>
+
+                <section id="partC">
+                    <h1 class="contentChangerImg">
+                        For the final implementation in Part C, I <a onclick="partC(this)">Coded The 'Adventure' Game</a>
+                    </h1>
+                    <img src="images/cyoa.jpg" href = "images/cyoa.jpg" alt="Example of a page from the 'Choose Your Own Adventure' games" class="imgEnlarge" style="display : block;">
+                    <img src="images/rect.png" href = "images/rect.png" alt="The Pins I made for the disaster categories" class="imgEnlarge" style="display :none;">
+                    <img src=""style="display :none;">
+                    <article class="content" style="display: block;"> 
+                        <p>
+                            While the ‘Choose Your Own Adventure’ game wasn’t originally my idea and I didn’t write any of the stories for it, 
+                            I did ultimately get the technical implementation and structure of it working. Honestly, I was looking forward to 
+                            attempting it, as I enjoy the sort of problem solving needed for these scenario’s and, with my great deal of 
+                            expertise and experience in gaming as a whole, felt more than prepared to give it a go. Indeed, while my prior knowledge 
+                            did come in handy when doing the initial structural design, the biggest issue I ran into was, quite simply, time management. 
+                            We didn’t get around to the game until very late in the development on account of how long it took to write up the individual 
+                            story scenario’s, giving me less than a week to get it all sorted and working. Due to this, I had to cut corners where I could and 
+                            resorted to design choices that, given additional time, I would much rather have redesigned. 
+                        </p>
+                        <p>
+                            The most noteworthy was how the game scored the user, as instead of implementing a system to check the answer, 
+                            I had to resort to structuring all the games so the second choice (right-hand side) was the only correct answer. 
+                            This forced constraints on how we designed the stories, but this had little affect as the stories were already being 
+                            reduced in size and quality compared to what we originally had envisioned. This was one of the troubles we had with implementing
+                             a unique scenario for each disaster type, as we had to distribute our time across the 8 categories we had. Whatever quality of 
+                             story we created for one disaster, we would have to recreate it for the other 7 disasters in order to have everything be of similar quality. 
+                             While I’m still happy with how it turned out, I know it could have been much more in-depth and of higher quality if given more time.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            Ok, sure, I didn’t create ALL the graphics for the project, but I did have influence in them. The main graphic was the background 
+                            image for the website which I ended up creating. The general idea for this was when we, as a team, had our epiphany on our 
+                            colour scheme and realised at the same time that we needed something more visually dynamic for the background other than just…white. 
+                            The solution? The single-colour multi-shade geometric pattern you can see in the background of this website. The other graphic was 
+                            for the disaster icons, which was an idea I had all the way back during the ‘Design Exploration’ phase. To complete the graphics in a timely manner, 
+                            the workload was split evenly between me and another team member, with myself providing general examples of the desired style to influence the design. 
+                            So, while I only made half of them, I did set the general art direction for all the icons. This did also include creating the code to dynamically asign 
+                            the disasters the associated pin, both in terms of categories and the danger rating (Yellow, Orange and Red correspond to Mild, Dangerous and Catastrophic).
+                            While I originally intended the code to dynamically colour the pins using a gradient, I was unable to complete this in the term permitted due to our use of the 
+                            google maps API, so I instead settled on creating 3 versions for each pin corresponding to the aforementioned danger ratings and colours.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            While not entirely specific to Part C, throughout the entire project development process, I constantly returned to old implementations 
+                            to revise and update functions with more efficient or appropriate solutions. The main change I made during the development was the 
+                            inclusion of local storage and variable parsing. I made use of local storage numerous times to either parse variables between pages or 
+                            reduce loading times by caching frequently called information. For the map, we locally stored the parsed data.gov results, 
+                            reducing the time it takes for the map to reactive to user changes in the filters by limiting the need to call the database to the initial page load. 
+                            We also used local storage to hold the current disaster ID and category, which is updated each time a user interacts with a disaster pin on the map. 
+                            This allows the appropriate information to be loaded for the safety information page, dynamically inserting the content to the base template page. 
+
+                        </p>
+                        <p>
+                            Later during Part C, I began parsing variables through the URL as a way to circumvent certain issues and simplify the code. 
+                            The main place I used this was for the disaster adventure games, as I parse the category of the disaster into the base game template page, 
+                            where it is then parsed from the URL to dynamically load the correct information. The next area I used it for was with the safety information page, 
+                            as I returned to revise stop-gag solution I created to access and parse the data from our secondary database. I changed it so the necessary variable, 
+                            the disaster category, was passed through the URL, allowing the MySQL query within the php file to access the variable before the query 
+                            is sent to our PhpMyAdmin database. This allowed me to specify the query to solely return the relevant information, thus reducing the need to 
+                            return and parse the entire database table. I much preferred this updated solution, as it minimised the information required and reduced the loading time of the page. 
+                        </p>
+                        <p>
+                            Even if it was by a realistically irrelevant amount of time for our project, I still preferred putting in the time and effort to create 
+                            the more efficient function, as it is a good practice to have when going into larger projects where loading times are a significant factor. 
+                            As such, I did my best throughout the entire project development cycle to minimise and streamline any functions within the code, regardless 
+                            of who originally implemented the function. While I by no means created every function, I did contribute, improve and comment all of them.
+                        </p>
+                    </article>
+                </section>
+
+                <section id="reflect">
+                    <h1 class="contentChanger" id = "mobileMinimize">
+                        After the semester, I have reflected on <a onclick="reflect(this)">My Expectations</a>
+                    </h1>
+                    <article class="content" style="display: block;">
+                        <p>
+                            Looking back at my original expectations for this course, I can see that it mostly met my expectations. However, there are still a number of 
+                            expectations I had that didn’t quite pan out exactly as I had thought. Namely, I assumed that the course would run similar to DECO1100, 
+                            with the team’s conducting various group activities through the contacts. While this was true for a time, the contacts quickly morphed 
+                            into a time to work on the project, collaborate with teammates and discuss with tutors. In hindsight I can understand why, 
+                            as this course is very much orientated to putting a great deal of effort into a single piece instead of multiple quick and short pieces 
+                            like how DECO1100 partly was, as we instead have our singular major project. In regards to the similarity to DECO1400, with the addendum of additional 
+                            database languages like Php and SQL, my expectations were fairly accurate there, as this course dealt with both the web-based development and thorough report writing of 1400.
+                        </p>
+                        <p>
+                            Interesting enough, one of my major concerns in my original expectations was how working with teams would go, as before this course I had little experience in the matter. 
+                            Now, after spending the semester as team lead and heading the major project development, I realise that I unconsciously took a proactive approach to this issue 
+                            by becoming the leader and organising the team together. I expected the worst but, instead of leaving it to chance as to how the team functioned, 
+                            I metaphorically took the reigns and used my own organisational and strategical thinking to ensure the group worked cooperatively, constructively and efficiently. 
+                            While I’m sure our team would have faired fine with any of the other members as lead, I think that my coordination, determination 
+                            and ambition greatly helped in creating a project that every member of the team could be proud of. 
+                        </p>
+                        <p>
+                            Sure enough, when discussing how the tradeshow, the only member of the team that showed any hint of doubt was, in fact, myself. 
+                            However, I feel this would have been true regardless as to what quality our final project ended up being, as I expected this due to 
+                            how I naturally doubt my work in an effort to self-improve, regardless of how practical that may be or if the assignment is already handed in. 
+                            And sure enough, my expectation of driven self-motivated learning came to fruition in my time as team lead, as the tasks I found myself 
+                            constantly completing for the project were those that other teammates had unsuccessfully attempted. These required me to step in and 
+                            put in the effort and focus to research, devise and develop a solution, requiring extensive problem solving and technical understanding.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            With my time as team lead over, I’ve ended the course learning a great deal. Firstly, my leadership role has helped to further 
+                            develop my communication and cooperation skills, as both are essential in order to create the ideal team dynamics and solve issues diplomatically. 
+                            I’ve learnt to deal with responsibility, as I repeatedly found myself making vital decisions that affected the entire team as a whole, 
+                            either directly by deciding the team roles or indirectly by deciding the orientation of the project. I was also required to learn the 
+                            importance of prioritisation, as the development of the website constantly changed which tasks were considered essential and even relevant. 
+                            After this semester, I can safely say that I now feel confident taking any form of leadership role and, with what I have learned from DECO1800, excelling at the position.
+                        </p>
+                        <p>
+                            In terms of technical skills, this semester has forced me to learn a greater deal about languages I wasn’t particularly familiar with. 
+                            Firstly, I was required to write most of the php code as mentioned earlier in relation to the database, as nobody else in the team was 
+                            familiar with php. While I did have some experience from INFS1200, this knowledge only covered the database creation in PhpMyAdmin and 
+                            MySQL queries but not writing php or connecting to the database. As such, I had to research and learn about different types of connections and 
+                            how to parse information from a database table through php into either HTML form or a JavaScript variable, in my case an array. 
+                            I also had to learn a great deal about JavaScript, as the only other team member with much experience in this field was Sid. 
+                            As such, I ended up completely a great deal of the JavaScript for the project, including the CYOA game, the danger rating, 
+                            information and variable parsing and the timeline. Where before, I felt uncomfortable in JavaScript, after this semester it has become my most 
+                            comfortable area for web development, which is a testament to the experience that I learnt and work that I completed for our project.
+                        </p>
+                        <p>
+                            With all these experience in mind, I realise that the main way that I developed my skills was less through the specific contact or 
+                            workshops but more through my own self-teaching. By the end of the semester, I had completed relatively few workshop activities as 
+                            most felt either redundant for our project, like common knowledge or unnecessary for my specific role. While I understand that my 
+                            role in the project shouldn’t affect what I learn in the workshops, realistically speaking it is impractical or unfeasible to 
+                            learn content that is unnecessary while juggling the other classes that most students will be taking full time. While it is inherently difficult to make content and learning activities 
+                            for several different skill levels and languages, this issue was compounded by the noticeable redundancy of the course lectures. 
+                            After watching the first few weeks of lectures, it became clear that the content covered was either rehashed knowledge from DECO1100 and 1400, 
+                            irrelevant to the course project or dealt with theoretical concepts that held little intrinsic technical value. 
+                            This sentiment was similarly shared by my team members, as we occasionally discussed the lecture and I came to realise that I 
+                            was not alone in my opinion, as most others had abandoned watching the lectures early in the course.
+                        </p>
+                    </article>
+                    <article class="content" style="display: none;">
+                        <p>
+                            In relation to the assessment, there is honestly little I would change in how we approached things. 
+                            I think our team did a fantastic job considering the relative inexperience of most members and am proud of what we accomplished. 
+                            While we could obviously create a better project after what we have learnt from this semester, it is impractical to consider the 
+                            project in hindsight with these developments. The only thing I believe we could have done differently was our approach to the 
+                            aesthetic design, as we found ourselves continually changing the colour scheme throughout the development cycle and didn’t 
+                            settle on a uniform design until the very end of Part C. If we found and decided upon a design earlier, we would have had 
+                            more time to reiterate and improve the style as the project continued but regardless, I still believe our final visual style was 
+                            very effective for it’s design. While I wouldn’t change anything in our team’s approach to the assignment, I would change a bit in relation to the course.
+                        </p>
+                        <p>
+                            Namely, as I discussed in my learning experiences this semester, the workshops and lectures of the course felt lacklustre. 
+                            While I understand that the workshop’s content had to be inherently broad to appeal to each programming language and skillset, 
+                            I feel it would have been more beneficial if what we learnt was more actively applicable to our project. Additionally, 
+                            I believe that the workshops were personally less beneficial to me as my workshop was the first of the week, on Monday, 
+                            and by that stage both the students and tutor had very little time to go over the content and attempt it, as sometimes the 
+                            content wouldn’t be released to the students until our class actually started. If our class was given more time to start the 
+                            weekly activities and the activities were made both more relevant to the project and written in a more succinct and focused style, 
+                            the workshops would have been far more useful and relevant. However, the main issue lay in the lectures, as both my team and 
+                            I deemed these relatively worthless for the course. As mentioned earlier, the content they covered was either already covered in 
+                            DECO 1100 or 1400, irrelevant or too theoretical to consider when we needed to delegate most of our time to the major project. 
+                            If the lectures instead dealt with more technical concepts or indeed more relevant information that was not covered in the prerequisite courses, 
+                            there would have been much more value to watching them. Besides the workshop and lecture content, I believe this was a successful 
+                            course and helped to teach both team skills and entice students to learn what they enjoyed and was relevant to them.
+                        </p>
+                    </article>
+                </section>
+                
+                <section id="portfolio">
+                    <h1 class = "contentChanger">
+                            This website is my personal portfolio.
+                    </h1>
+                    <article class="content" style="display: block;"> 
+                        <p>
+                            This portfolio website was completed for the DECO1800 course reflection and primarily utilises the skills and 
+                            content I gained from that course. One of the biggest considerations I had when creating this portfolio was 
+                            the use of JavaScript and CSS. For me, JavaScript is my favourite part of web development and is where I am most confident, 
+                            so I wanted to try and reflect this in my design. To that end, I created several different functions to 
+                            accomplish things myself and changed the overall structure of my website to make more obvious use of JavaScript, 
+                            particularly with the use of buttons to change the textual elements. While I am uncertain how these 
+                            components work from a stylistic and design perspective, I still wanted to make use of them to show my proficiency 
+                            and passion for JavaScript. I also made use of a some third-party javascript code, modified to suit my needs, to
+                            spice up the landing page and image interaction. I've referrenced these below. However, I did not enjoy the CSS styling of the portfolio. 
+                            While I don’t lack the skills to style or write CSS, I personally find the process of doing so incredibly frustrating, slow and painful. 
+                            I’d much rather spend several hours creating a difficult JavaScript function than styling and positioning the elements on webpage, 
+                            as I much prefer the small amount of difficult tasks associated with coding than the bunch of relatively menial and boring aspects of web styling.
+                        </p>
+                        <p>
+                            References Include: 
+                        </p>
+                        <p>
+                            Magnific Popups by Dmitry Semenov for the sleek image zoom: http://dimsemenov.com/plugins/magnific-popup/ 
+                        </p>
+                        <p>
+                            GreenSock GSAP animation library: https://greensock.com/gsap/ 
+                        </p>
+                        <p>
+                            Demo 3 by Rachel Smith from CoDrops Animated Background Headers for the landing screen background animation: https://tympanus.net/Development/AnimatedHeaderBackgrounds/index3.html 
+                        </p>
+                        <p>
+                            jQuery JavaScript Library: https://jquery.com/ 
+                        </p>
+                    </article>
+                </section>
+
+
+            </div>
+            <!-- GreenSock GSAP core JS file -->
+            <script src="js/gsap.min.js"></script>  
+            <script src="js/landing.js"></script>  
+            <script src="js/content.js"></script>
+            <script src="js/scroll.js"></script>   
+            <script src="js/gradient.js"></script>      
+    </body>
+</html>
