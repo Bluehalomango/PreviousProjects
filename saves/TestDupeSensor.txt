@@ -1,9 +1,0 @@
-General Purpose South
-5
-1:10:10:4:101,103,102,104
-101:STUDY:20:0
-102:STUDY:20:2
-OccupancySensor:13,24,28,15,6:4:30
-OccupancySensor:13,24,28,15,6:4:30
-103:STUDY:15:0
-104:LABORATORY:45:0
