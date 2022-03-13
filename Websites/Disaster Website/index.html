@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/index.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA2JEtOjSxymLB5AkT2Rv-7DmJnjWPNSIc&callback=initMap"></script>
+
+  <title>Disaster Discovery - Home</title>
+  <style>
+    #map{
+	    height:100vh;
+        width:100%;
+        
+    }
+  </style>
+</head>
+
+<body>
+    <main class="index">
+
+        <!-- Div for the instructional popup on the left side -->
+        <div class="pop-up" id="Bar">
+            <div id="right">
+                <a href="#" onclick="Hide(Bar);">X</a>
+            </div>
+
+            <div id="left">
+                <b >Welcome!</b> <br>
+                Click on the pins to learn more on the disaster! 
+            </div>
+        </div>
+
+        <!-- Section for the map and timeline -->
+        <section class="map-index">
+            <div class="map">
+                <div id="map"></div>
+            </div>
+            <div class="timeline">    
+                <!-- Timeline that allows the user to change the timeline range -->               
+                <p>1850</p>
+                <input type="range" min="1850" max="2020" value="2010" class="slider" id="timeline">
+                <p>2020</p>
+            </div>
+        </section>
+
+        <!-- Aside section for the various filters and other page elements -->
+        <aside class="filter-map">
+            <header class="header-index">
+                <h1>Disaster Discovery</h1>
+            </header>
+
+            <section class="filter-search"> 
+
+                <!-- Search bar -->
+                <div class="tooltip">
+                    <h2 id="search">Search:</h2> 
+                    <!-- Instructional tooltip for Search Bar -->
+                    <span class="tooltiptext">Search by typing in word to match against.</span>   
+                </div>
+
+                <input type="text" name="filter_search" id="form-filter-search" placeholder="Search" />
+            
+                <!-- Danger Rating Header-->
+                <div class="tooltip">
+                    <h2 id="danger-rating-header">Danger Rating</h2> 
+                    <!-- Instructional tooltip for Danger Rating Input -->
+                    <span class="tooltiptext">Sort by how dangerous the disasters are (Higher is more dangerous)</span>   
+                </div>  
+
+                <!-- Danger Rating Input -->
+                <ul class="danger-rating-score">
+                    <input type="number" id="danger-rating" name="quantity" min="0" max="100" step="1" value="0">
+                </ul>
+
+                <!-- Category Header -->
+                <div class="tooltip">
+                    <h2 id="categories">Categories:</h2> 
+                    <!-- Instructional tooltip for Category Filters -->
+                    <span class="tooltiptext">Sort by disaster categories. Can select multiple at a time.</span>   
+                </div>  
+
+                <!-- Category filter options -->
+                <ul class="filter-options">
+                    <li id="cyclone">
+                        Cyclone
+                    </li>
+                    <li id="hail">
+                        Hail
+                    </li>
+                    <li id="earthquake">
+                        Earthquake
+                    </li>
+                    <li id="flood">
+                        Flood
+                    </li>
+                    <li id="urban-fire">
+                        Urban Fire
+                    </li>
+                    <li id="drought">
+                        Drought
+                    </li>
+                    <li id="heatwave">
+                        Heatwave
+                    </li>
+                    <li id="bushfire">
+                        Bushfire
+                    </li>
+                </ul>
+
+                <!-- Link to 'About Us' page -->
+                <div id= "about">
+                    <a href="aboutus.html">
+                        <h3>About Us</h3>
+                    </a>       
+                </div>
+            </section>
+        </aside> 
+    </main>
+</body>
+</html>
