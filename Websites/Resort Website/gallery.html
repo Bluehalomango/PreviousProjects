@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+	</head>
+        <body>
+          <nav>
+                  <div class="bannertitle">
+                      <a href="index.html" id="bannertitle">Escape Zone</a>
+                </div>
+                      <a href="rooms.html">Escape Rooms</a>
+                      <a href="accommodation.html">Accommodation</a>
+                      <a href="about.html">About Us</a>
+                      <a href="FAQ.html">FAQ</a>
+                      <a href="contact.html">Contact Us</a>
+                      <a href= "gallery.html"">Gallery</a>
+          </nav>
+
+        <div class="gallery_row">            
+          <div class="gallery_column">
+            <img src="images/rooms/escape.jpg" alt="Long dark Corridor" onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/accom/hotel.jpg" alt="Luxurious Modern Hotels"  onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/accom/refurb.jpg" alt="Refurbished apartments in Pripyat"  onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/accom/local.jpg" alt="Classy Hotels in Kiev"  onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/accom/rural.jpg" alt="Rustic Farmstay"onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/rooms/bunker.jpg" alt="Abandoned Bunker Door" onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/rooms/exfil.jpg" alt="Russian Helicopter" onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/index/potted.jpg" alt="Decrepit Apartment" onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/index/sky.jpg" alt="View of sky from abandoned silo" onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/index/exp.jpg" alt="Gas Mask Hanging from wall" onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/index/house.jpg" alt="Collapsing apartment" onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/rooms/meltdown.jpg" alt="Nuclear Power Plant at Sunset"  onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/rooms/survival.jpg" alt="Broken Window in abandoned room"  onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/rooms/winter.jpg" alt="Pripyat in winter, covered in snow"  onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/about/wheel.jpg" alt="Abandoned Ferris Wheel" onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/about/sign.jpg" alt="Old russian town sigh"  onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/about/apart.jpg" alt="Pripyat in Autumn, with orange leaves" onclick="zoom(this);">
+          </div>
+          <div class="gallery_column">
+            <img src="images/about/cars.jpg" alt="Abandoned amusement park"  onclick="zoom(this);">
+          </div>
+
+            <a class="prev" onclick="leftslide()">&#10094;</a>
+            <a class="next" onclick="rightslide()">&#10095;</a>
+
+          </div>
+          
+          <div class="imgfocus">
+            <img id="galleryzoom" >
+            <div id="gallerytext"></div>
+          </div>
+
+          <footer>
+            <a href="index.html" id="footertitle">Escape Zone</a>
+            <div class ="leftfoot">
+                <a href="terms.html">Terms and Conditions</a>
+                <a href="job.html">Apply for a Job</a>
+            </div>
+            <div class ="rightfoot">
+                <a href="">Twitter</a>
+                <a href="">Facebook</a>
+                <a href="">Instagram</a>
+            </div>
+    </footer>
+        
+    <script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/galleryslide.js"></script>
+</body>
+</html>
